@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "nhphuong.web@gmail.com",
+  "description": "Base chrome extension development with angular 4",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": [
+      "inline.bundle.js",
+      "polyfills.bundle.js",
+      "styles.bundle.js",
+      "vendor.bundle.js",
+      "main.bundle.js"
+    ]
+  },
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
